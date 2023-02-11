@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!------------------------------Navigation Bar------------------------------>
+    <header>
+        <a href="#" class="logo">Trav<span>eling</span></a>
+        <div class="js-menu" onclick="menuAdapt()"></div>
+        <ul class="navigation">
+            <li><a href="#home">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </header>
+
+    <!------------------------------Background IMG and Description------------------------------>
+    <section class="banner" id="home">
+        <div class="content">
+            <div class="info">
+                <h2>Adventure</h2>
+                <p>Scroll Down ↓</p>
+            </div>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!------------------------------ Description About Site ------------------------------>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titletext"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Debitis excepturi itaque distinctio, animi provident impedit.
+                    Ratione qui incidunt aut velit commodi voluptatum non consectetur.
+                    Nihil aperiam quasi delectus consequatur culpa. Nihil et eveniet expedita blanditiis voluptatibus
+                    sunt,
+                    aliquam quo at autem. Pariatur minima nam quibusdam itaque maiores ex, minus assumenda.<br><br>Lorem
+                    ipsum dolor,
+                    sit amet consectetur adipisicing elit.
+                    Blanditiis reprehenderit aperiam harum! Est reprehenderit deleniti maiores quas facere. Nihil,
+                    molestias?</p>
+            </div>
+            <div class="col50">
+                <div class="imgbx">
+                    <img src="./IMG/background.jpg">
+                </div>
+            </div>
+    </section>
+
+    <!------------------------------Tab Menu Galery------------------------------>
+    <section id="features">
+        <div class="imageGallery" style="text-align:center">
+            <h2 class="titletext"><span>F</span>eatures</h2>
+        </div>
+        <div>
+            <div class="column js-tabmenu">
+                <img src="./IMG/Camping.jpg" onclick="gfg(this);">
+                <img src="./IMG/Kayaking.jpg" onclick="gfg(this);">
+                <img src="./IMG/Hiking.jpg" onclick="gfg(this);">
+                <img src="./IMG/Rafting.jpg" onclick="gfg(this);">
+                <img src="./IMG/Climbing.jpg" onclick="gfg(this);">
+            </div>
+            <div class="expandDiv">
+                <div class="description js-tabcontent">
+                    <section>
+                        <h2>Camping</h2>
+                        <p>Camping is an outdoor activity involving overnight stays away from home, either without
+                            shelter or using basic shelter such as a tent, or a recreational vehicle.</p>
+                        <p>Typically, participants leave developed areas to spend time outdoors in more natural ones in
+                            pursuit of activities providing them enjoyment or an educational experience.</p>
+                        <p>The night (or more) spent outdoors distinguishes camping from day-tripping, picnicking, and
+                            other similarly short-term recreational activities.</p>
+                    </section>
+                    <section>
+                        <h2>Kayaking</h2>
+                        <p>Kayaking is the use of a kayak for moving over water. It is distinguished from canoeing by
+                            the sitting position of the paddler and the number of blades on the paddle.</p>
+                        <p>A kayak is a low-to-the-water, canoe-like boat in which the paddler sits facing forward, legs
+                            in front, using a double-bladed paddle to pull front-to-back on one side and then the other
+                            in rotation.</p>
+                        <p>Most kayaks have closed decks, although sit-on-top and inflatable kayaks are growing in
+                            popularity as well.</p>
+                    </section>
+                    <section>
+                        <h2>Hiking</h2>
+                        <p>Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside. Walking
+                            for pleasure developed in Europe during the eighteenth century.</p>
+                        <p>Religious pilgrimages have existed much longer but they involve walking long distances for a
+                            spiritual purpose associated with specific religions.</p>
+                    </section>
+                    <section>
+                        <h2>Rafting</h2>
+                        <p>Rafting and whitewater rafting are recreational outdoor activities which use an inflatable
+                            raft to navigate a river or other body of water.</p>
+                        <p>This is often done on whitewater or different degrees of rough water.</p>
+                        <p>Dealing with risk is often a part of the experience.</p>
+                    </section>
+                    <section>
+                        <h2>Climbing</h2>
+                        <p>Climbing is the activity of using one's hands, feet, or any other part of the body to ascend
+                            a steep topographical object that can range from the world's tallest mountains (e.g. the
+                            eight thousanders), to small boulders.</p>
+                        <p>Climbing is done for locomotion, sporting recreation, and for competition, and is also done
+                            in trades that rely on ascension; such as emergency rescue and military operations.</p>
+                        <p>Climbing is done indoors and outdoors and on natural (e.g. rock and ice) and artificial
+                            surfaces.</p>
+                    </section>
+                </div>
+                <img id="expand">
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------Contact Us Page------------------------------>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titletext"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eos.</p>
+        </div>
+        <div class="bgContact">
+            <div class="contactform">
+                <h3>Send Message</h3>
+                <div class="inputbox">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputbox">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputbox">
+                    <textarea placeholder="Message Here"></textarea>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>copyright 2022 <a href="#">Aleikson</a>. All Right Reserved</p>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
