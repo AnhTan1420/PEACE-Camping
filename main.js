@@ -19,10 +19,13 @@ function gfg(imgs) {
 }
 
 function initTabNav() {
+  const expandImg = document.getElementById("expand");
   const tabMenu = document.querySelectorAll('.js-tabmenu img');
   const tabContent = document.querySelectorAll('.js-tabcontent section');
 
   if (tabMenu.length && tabContent.length) {
+
+    expandImg.src = tabMenu[0].src;
 
     tabContent[0].classList.add('ativo')
 
